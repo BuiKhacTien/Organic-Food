@@ -13,7 +13,7 @@ export default function Home() {
       <div>
         <div className="hello">
           <div className="hello_title">
-            Trang Chủ
+            Trang Chủ 2
           </div>
         </div>
       </div>
