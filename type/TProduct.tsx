@@ -3,12 +3,10 @@
 export default TProduct 
 
 type TProduct = {
-    _id: string,
-    at: number,
+    id: number,
+    image: string,
     name: string,
     price: number,
-    array: object[],
-    
 }
 
 export type TUpdateProduct = Partial<Omit<TProduct, "_id" | "at">>

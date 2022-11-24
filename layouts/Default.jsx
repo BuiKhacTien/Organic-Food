@@ -18,7 +18,7 @@ const Default = ({ children }) => {
       <main>{children}</main>
       <TheFooter />
       <div  onClick={scrollToTop} className="scroll_to_top">
-        <GrLinkTop size={32}/>
+        <GrLinkTop className="scroll_to_top_icon"/>
       </div>
       <ToastContainer />
     </div>
