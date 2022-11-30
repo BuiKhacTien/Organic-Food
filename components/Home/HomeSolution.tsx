@@ -35,13 +35,17 @@ function Index() {
 			<div className="technology_solution_line1"></div>
 			<div className="technology_solution_description">Phát sinh từ mong muốn giảm thiểu tối đa rủi ro mà người nông dân có thể gặp phải khi canh tác nông nghiệp cũng như thuỷ, hải sản tại Việt Nam; Đồng thời cũng hiểu được giá trị kinh tế từ thực phẩm đảm bảo chất lượng trước thực trạng xã hội hiện nay…</div>
 			<div className="technology_solution_text">
-				BiO-MONA VIETNAM SẼ LÀ GIẢI PHÁP
+				CÔNG TY TNHH TM DV 
 				<br />
-				ĐÁP ỨNG NHU CẦU & MONG MUỐN CỦA CÁC BẠN
+				KỸ THUẬT MÔI TRƯỜNG T & T 
+				<br />
+				SẼ LÀ GIẢI PHÁP ĐÁP ỨNG NHU CẦU
+				<br />
+				& MONG MUỐN CỦA CÁC BẠN
 			</div>
 			<div className="technology_solution_button">
-				<div className="button_solution"><Link href="/gioi-thieu">THAM KHẢO GIẢI PHÁP</Link></div>
-				<div className="button_solution support_solution"><Link href="/gioi-thieu">YÊU CẦU HỖ TRỢ KỸ THUẬT</Link></div>
+				<div className="button_solution"><Link href="/">THAM KHẢO GIẢI PHÁP</Link></div>
+				<div className="button_solution support_solution"><Link href="/">YÊU CẦU HỖ TRỢ KỸ THUẬT</Link></div>
 			</div>
 			<div className="technology_solution_line2"></div>
 		</div>

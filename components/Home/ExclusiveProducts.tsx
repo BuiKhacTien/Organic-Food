@@ -6,48 +6,71 @@ import ProductCard from "../common/ProductCard"
 import { HiArrowNarrowLeft, HiArrowNarrowRight } from 'react-icons/hi'
 import { GrPrevious, GrNext } from "react-icons/gr";
 
+const image1 = require('../../public/images/product1.jpg');
+const image2 = require('../../public/images/product2.jpg');
+const image3 = require('../../public/images/product3.jpg');
+const image4 = require('../../public/images/product4.jpg');
+const image5 = require('../../public/images/product-1-nito.png');
+const image6 = require('../../public/images/product-2-vi-sinh.png');
+const image7 = require('../../public/images/product-3-che-pham-xu-ly-mui-hoi.png');
+const image8 = require('../../public/images/product-4-cung-cap-thiet-bi-moi-truong.png');
+const image9 = require('../../public/images/product-5-be-vi-sinh-nuoc-thai.png');
+
+
 const data = [
 	{
 		id: 1,
-		image: "https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/biowish-odor-swine-featured-image.png",
-		name: "BBiOWiSH® MANURE & ODOR TREATMENT: SWINE 1",
+		image: image1.default.src,
+		name: "Hữu cơ trùn quế",
 		price: 600000,
 	},
 	{
 		id: 2,
-		image: "https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/5749ffd1a06d4cbd7e687444cfc1e79963fdad2f-300x300.jpg",
-		name: "Dâu tây",
+		image: image2.default.src,
+		name: "Chế phẩm xử lý nước thải T&T02",
 		price: 700000,
 	},
 	{
 		id: 3,
-		image: "https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/aquaculture-2-300x300.jpg",
-		name: "Tôm sú",
+		image: image3.default.src,
+		name: "Men vi sinh xử lý nước thải T&T01",
 		price: 800000,
 	},
 	{
 		id: 4,
-		image: "https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/biowish-odor-swine-featured-image.png",
-		name: "BBiOWiSH® MANURE & ODOR TREATMENT: SWINE 4",
+		image: image4.default.src,
+		name: "Chế phẩm hữu cơ sinh học T&T02",
 		price: 900000,
 	},
 	{
 		id: 5,
-		image: "https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/biowish-odor-swine-featured-image.png",
-		name: "BBiOWiSH® MANURE & ODOR TREATMENT: SWINE 5",
-		price: 1000000,
+		image: image5.default.src,
+		name: "Xử lý ni tơ T&T",
+		price: 900000,
 	},
 	{
 		id: 6,
-		image: "https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/biowish-odor-swine-featured-image.png",
-		name: "BBiOWiSH® MANURE & ODOR TREATMENT: SWINE 6",
-		price: 1100000,
+		image: image6.default.src,
+		name: "vi sinh nước thải T&T",
+		price: 900000,
 	},
 	{
 		id: 7,
-		image: "https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/biowish-odor-swine-featured-image.png",
-		name: "BBiOWiSH® MANURE & ODOR TREATMENT: SWINE 7",
-		price: 1200000,
+		image: image7.default.src,
+		name: "Chế phẩm xử lý mùi hôi",
+		price: 900000,
+	},
+	{
+		id: 8,
+		image: image8.default.src,
+		name: "Cung cấp thiết bị môi trường",
+		price: 900000,
+	},
+	{
+		id: 9,
+		image: image9.default.src,
+		name: "Bể vi sinh nước thải",
+		price: 900000,
 	},
 ]
 
@@ -69,7 +92,9 @@ const Settings = {
 	infinite: true,
 	speed: 500,
 	slidesToShow: 5,
-	slidesToScroll: 5,
+	slidesToScroll: 1,
+	autoplay: true,
+    autoplaySpeed: 3000,
 	nextArrow: <SampleNextArrow />,
 	prevArrow: <SamplePrevArrow />,
 	responsive: [
@@ -77,27 +102,28 @@ const Settings = {
           breakpoint: 1024,
           settings: {
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
           }
         },
         {
           breakpoint: 768,
           settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 1,
           }
         },
         {
           breakpoint: 480,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
           }
         }
       ]
 };
 
 function Index() {
+	console.log(image1);
 	return (
 		<div className='exclusive_products_container'>
 			<div className="exclusive_products_title_box">
@@ -109,7 +135,7 @@ function Index() {
 					{
 						data.map((value) => {
 							return (
-								<div key={value.id}>
+								<div key={value.id} className="slider_box_item">
 									<ProductCard data={value}/>
 								</div>
 							)

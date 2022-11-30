@@ -13,6 +13,7 @@ import { BsSearch } from 'react-icons/bs'
 import { FaSearch } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
+const image1 = require('../../public/images/logo.PNG');
 
 const menuData = [
 	{
@@ -20,12 +21,6 @@ const menuData = [
 		name: 'Trang chủ',
 		isSelected: false,
 		to: '/',
-	},
-	{
-		id: 1,
-		name: 'Giới thiệu',
-		isSelected: false,
-		to: '/gioi-thieu',
 	},
 	{
 		id: 2,
@@ -55,7 +50,7 @@ const menuData = [
 
 function index() {
 
-
+	console.log(image1);
 	//HeaderPC
 	const [menu, setMenu] = useState(
 		[
@@ -64,12 +59,6 @@ function index() {
 				name: 'Trang chủ',
 				isSelected: true,
 				to: '/',
-			},
-			{
-				id: 1,
-				name: 'Giới thiệu',
-				isSelected: false,
-				to: '/gioi-thieu',
 			},
 			{
 				id: 2,
@@ -143,11 +132,13 @@ function index() {
 			<div className="header_container">
 				<div className="header_box_desktop">
 					<div className="header_logo">
-						<img
-							className='header_logo_image'
-							src='https://mauweb.monamedia.net/huucomientrung/wp-content/uploads/2019/05/logo-mona2.png'
-							alt='logo'
-						/>
+						<Link href="/">
+							<img
+								className='header_logo_image'
+								src={image1.default.src}
+								alt='logo'
+							/>
+						</Link>
 					</div>
 					<div className="header_menu_desktop">
 						{
@@ -173,11 +164,13 @@ function index() {
 						<GiHamburgerMenu size={25} />
 					</div>
 					<div className="header_logo_mobile">
-						<img
-							className='header_logo_mobile_image'
-							src='https://iweb.tatthanh.com.vn/pic/3/blog/images/image(771).png'
-							alt='logo'
-						/>
+						<Link href="/">
+							<img
+								className='header_logo_mobile_image'
+								src={image1.default.src}
+								alt='logo'
+							/>
+						</Link>
 					</div>
 					<div className="header_mobile_search">
 						<BsSearch onClick={handleClickSearchIcon} size={22} className='header_mobile_search_icon' />

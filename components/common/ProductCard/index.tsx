@@ -15,13 +15,15 @@ function Index({data}: Props) {
 
   return (
     <div className='product_card_box'>
-      <div className="product_card_box_content">
-        <div className="product_card_img_box">
-          <img className='product_card_img' src={data.image} alt={data.name} />
+      <Link href="/detail/huu-co-trun-que">
+        <div className="product_card_box_content">
+          <div className="product_card_img_box">
+            <img className='product_card_img' src={data.image} alt={data.name} />
+          </div>
+          <div className="product_card_name">{data.name}</div>
+          {/* <div className="product_card_price">{numberWithCommas(data.price)+" ₫"}</div> */}
         </div>
-        <div className="product_card_name">{data.name}</div>
-        <div className="product_card_price">{numberWithCommas(data.price)+" ₫"}</div>
-      </div>
+      </Link>
     </div>
   )
 }
