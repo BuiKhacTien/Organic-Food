@@ -24,7 +24,7 @@ export default function Home() {
       <div className="home_exclusive_products">
         <div className='home_container'>
           <ExclusiveProducts />
-          <SphereOfActivity />
+          {/* <SphereOfActivity /> */}
         </div>
       </div>
       <div>

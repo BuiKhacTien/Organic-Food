@@ -33,10 +33,7 @@ function Index({openFilters, setOpenFilters}: any) {
                         </Accordion.Header>
                         <Accordion.Body style={{ padding: 0 }}>
                             <div className="products_page_filters_box_category_item_box">
-                                <div className='products_page_filters_box_category_item filters_box_category_gray'>Thực phẩm</div>
-                                <div className='products_page_filters_box_category_item'>Thủy sản</div>
-                                <div className='products_page_filters_box_category_item filters_box_category_gray'>Nông nghiệp</div>
-                                <div className='products_page_filters_box_category_item'>Chăn nuôi</div>
+                                <div className='products_page_filters_box_category_item'>Phân bón</div>
                                 <div className='products_page_filters_box_category_item filters_box_category_gray'>Môi trường</div>
                             </div>
                         </Accordion.Body>

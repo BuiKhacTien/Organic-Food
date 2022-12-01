@@ -13,7 +13,7 @@ import { BsSearch } from 'react-icons/bs'
 import { FaSearch } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
 
-const image1 = require('../../public/images/logo.PNG');
+const imageLogo = require('../../public/images/logokhongnen.png');
 
 const menuData = [
 	{
@@ -23,6 +23,12 @@ const menuData = [
 		to: '/',
 	},
 	{
+		id: 1,
+		name: 'Giới thiệu',
+		isSelected: false,
+		to: '/gioi-thieu',
+	},
+	{
 		id: 2,
 		name: 'Sản phẩm',
 		isSelected: false,
@@ -30,9 +36,9 @@ const menuData = [
 	},
 	{
 		id: 3,
-		name: 'Kiến thức',
+		name: 'Công trình',
 		isSelected: false,
-		to: '/kien-thuc',
+		to: '/cong-trinh',
 	},
 	{
 		id: 4,
@@ -50,7 +56,6 @@ const menuData = [
 
 function index() {
 
-	console.log(image1);
 	//HeaderPC
 	const [menu, setMenu] = useState(
 		[
@@ -61,6 +66,12 @@ function index() {
 				to: '/',
 			},
 			{
+				id: 1,
+				name: 'Giới thiệu',
+				isSelected: false,
+				to: '/gioi-thieu',
+			},
+			{
 				id: 2,
 				name: 'Sản phẩm',
 				isSelected: false,
@@ -68,9 +79,9 @@ function index() {
 			},
 			{
 				id: 3,
-				name: 'Kiến thức',
+				name: 'Công trình',
 				isSelected: false,
-				to: '/kien-thuc',
+				to: '/cong-trinh',
 			},
 			{
 				id: 4,
@@ -135,7 +146,7 @@ function index() {
 						<Link href="/">
 							<img
 								className='header_logo_image'
-								src={image1.default.src}
+								src={imageLogo.default.src}
 								alt='logo'
 							/>
 						</Link>
@@ -167,7 +178,7 @@ function index() {
 						<Link href="/">
 							<img
 								className='header_logo_mobile_image'
-								src={image1.default.src}
+								src={imageLogo.default.src}
 								alt='logo'
 							/>
 						</Link>

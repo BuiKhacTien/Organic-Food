@@ -79,13 +79,13 @@ function index() {
     return (
         <div>
             <Head>
-                <title>Tin Tức</title>
+                <title>Công Trình</title>
             </Head>
             <div className="breadcrumb_box">
                 <div className="breadcrumb_box_router_box">
                     <div className="breadcrumb_box_router_prev" onClick={() => router.push("/")}>Trang chủ</div>
                     <div className="breadcrumb_box_router_slash">/</div>
-                    <div className="breadcrumb_box_router_here">Tin tức</div>
+                    <div className="breadcrumb_box_router_here">Công trình</div>
                 </div>
             </div>
             <div className='knowledge_container'>
@@ -98,7 +98,7 @@ function index() {
                         <div className="knowledge_old_items_box">
                             {data.map((value,index) => {
                                 return (
-                                    <div className="knowledge_old_item col-md-4 col-sm-6 col-12"  key={value.name}>
+                                    <div className="knowledge_old_item col-md-4 col-sm-6 col-12" key={value.name}>
                                         <Link href="/cong-trinh/he-thong-xu-ly-nuoc-thai-thuy-san">
                                             <div className='knowledge_content_box'>
                                                 <div className="knowledge_content_box_box">
@@ -124,7 +124,7 @@ function index() {
                                 {
                                     data.map((value, index) => {
                                         return (
-                                            <div className='knowledge_new_content_box'  key={value.name}>
+                                            <div className='knowledge_new_content_box' key={value.name}>
                                                 <div className="knowledge_new_content_box_box">
                                                     <div className="knowledge_new_img_box">
                                                         <img className='knowledge_new_img' src={value.image} alt={value.name} />

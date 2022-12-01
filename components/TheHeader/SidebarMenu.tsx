@@ -23,14 +23,19 @@ function Index({open, setOpen}: TSidebarMenu) {
             Trang chủ
           </div>
         </Link>
+        <Link href="/gioi-thieu">
+          <div className="sibar_menu_box_item" onClick={handleClickClose} >
+            Giới thiệu
+          </div>
+        </Link>
         <Link href="/san-pham">
           <div className="sibar_menu_box_item" onClick={handleClickClose} >
             Sản phẩm
           </div>
         </Link>
-        <Link href="/kien-thuc">
+        <Link href="/cong-trinh">
           <div className="sibar_menu_box_item" onClick={handleClickClose} >
-            Kiến thức
+            Công trình
           </div>
         </Link>
         <Link href="/tin-tuc">

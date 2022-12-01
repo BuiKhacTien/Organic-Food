@@ -15,7 +15,7 @@ function Index({data}: Props) {
 
   return (
     <div className='product_card_box'>
-      <Link href="/detail/huu-co-trun-que">
+      <Link href="/san-pham/huu-co-trun-que">
         <div className="product_card_box_content">
           <div className="product_card_img_box">
             <img className='product_card_img' src={data.image} alt={data.name} />

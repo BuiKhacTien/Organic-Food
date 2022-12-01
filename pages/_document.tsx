@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <title>Môi Trường T&T</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli|Prompt" />
         <meta name="description" content="" />
