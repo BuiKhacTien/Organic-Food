@@ -6,9 +6,9 @@ import PostsCard from "../../components/common/PostsCard"
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-const imageActivity1 = require('../../public/images/hoatdong1.JPG');
-const imageActivity2 = require('../../public/images/hoatdong2.JPG');
-const imageActivity3 = require('../../public/images/hoatdong3.JPG');
+// const imageActivity1 = require('../../public/images/hoatdong1.JPG');
+// const imageActivity2 = require('../../public/images/hoatdong2.JPG');
+// const imageActivity3 = require('../../public/images/hoatdong3.JPG');
 
 const imageGT1 = require('../../public/images/gioithieu1.png');
 const imageGT2 = require('../../public/images/gioithieu2.png');
@@ -166,7 +166,7 @@ function Index() {
 				<div className="breadcrumb_box_router_box">
 					<div className="breadcrumb_box_router_prev" onClick={() => router.push("/")}>Trang chủ</div>
 					<div className="breadcrumb_box_router_slash">/</div>
-					<div className="breadcrumb_box_router_here">Sản phẩm</div>
+					<div className="breadcrumb_box_router_here">Giới thiệu</div>
 				</div>
 			</div>
 			<div className='introduce_container'>
@@ -183,30 +183,23 @@ function Index() {
 					</div>
 					<div className="introduce_content_box">
 						<div className="introduce_content_box_opacity">
-							<div className="introduce_content_building col-lg-3 col-12">
-								<div className="introduce_content_building_title">SẢN PHẨM NỔI BẬT</div>
-								<div className='introduce_content_building_items_box'>
-									{
-										dataProduct.map((value) => {
-											return (
-												<div key={value.id} className="introduce_content_building_item">
-													<div className='product_card_box introduce_content_building_item_product'>
-														<Link href="/san-pham/huu-co-trun-que">
-															<div className="product_card_box_content">
-																<div className="product_card_img_box">
-																	<img className='product_card_img' src={value.image} alt={value.name} />
-																</div>
-																<div className="product_card_name" style={{ color: "white" }}>{value.name}</div>
-															</div>
-														</Link>
-													</div>
-												</div>
-											)
-										})
-									}
+							{/* <div className="introduce_content_side_bar col-lg-3 col-12">
+								<div className="introduce_content_side_bar_item">
+									<div className="introduce_content_side_bar_item_img_box">
+										<img src={imageGT2.default.src} alt="gioi-thieu" className='introduce_content_side_bar_item_img' />
+									</div>
+									<div className="introduce_content_side_bar_item_title">New Features</div>
+									<div className="introduce_content_side_bar_item_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</div>
 								</div>
-							</div>
-							<div className="introduce_content_sphere col-lg-6 col-12">
+								<div className="introduce_content_side_bar_item">
+									<div className="introduce_content_side_bar_item_img_box">
+										<img src={imageGT3.default.src} alt="gioi-thieu" className='introduce_content_side_bar_item_img' />
+									</div>
+									<div className="introduce_content_side_bar_item_title">New Features</div>
+									<div className="introduce_content_side_bar_item_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</div>
+								</div>
+							</div> */}
+							<div className="introduce_content_sphere col-12">
 								<div className="introduce_content_sphere_box">
 									<div className="introduce_content_sphere_img_box">
 										<img className="introduce_content_sphere_img" src={imageGT1.default.src} alt="lĩnh vực hoạt động"></img>
@@ -224,39 +217,31 @@ function Index() {
 										<div className="introduce_content_sphere_text">- Dịch vụ cho thuê hệ thống xử lý nước thải làng nghề công suất từ  5 -15m3/ngày đêm.</div>
 										<div className="introduce_content_sphere_text">- Dịch vụ đo kiểm môi trường lao động.</div>
 										<div className="introduce_content_sphere_text">- Nhận TEST nhanh chỉ tiêu COD nước thải.</div>
-										<div className="introduce_content_sphere_text_qc">Dịch vụ in ấn thiết kế quảng cáo</div>
+										{/* <div className="introduce_content_sphere_text_qc">Dịch vụ in ấn thiết kế quảng cáo</div> */}
 									</div>
-									<div className="introduce_content_activity">
+									{/* <div className="introduce_content_activity">
 										<img src={imageActivity1.default.src} alt="hoạt động của công ty" className='introduce_content_activity_img' />
 										<img src={imageActivity2.default.src} alt="hoạt động của công ty" className='introduce_content_activity_img' />
 										<img src={imageActivity3.default.src} alt="hoạt động của công ty" className='introduce_content_activity_img' />
+									</div> */}
+								</div>
+							</div>
+							{/* <div className="introduce_content_side_bar col-lg-3 col-12">
+								<div className="introduce_content_side_bar_item">
+									<div className="introduce_content_side_bar_item_img_box">
+										<img src={imageGT4.default.src} alt="gioi-thieu" className='introduce_content_side_bar_item_img' />
 									</div>
+									<div className="introduce_content_side_bar_item_title">New Features</div>
+									<div className="introduce_content_side_bar_item_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</div>
 								</div>
-							</div>
-							<div className="introduce_content_building col-lg-3 col-12">
-								<div className="introduce_content_building_title">CÔNG TRÌNH NỔI BẬT</div>
-								<div className="introduce_content_building_items_box">
-									{
-										dataBuilding.map((value) => {
-											return (
-												<div key={value.id} className="introduce_content_building_item">
-													<div className='posts_card_box introduce_content_building_item_posts'>
-														<div className="posts_card_box_content">
-															<div className="posts_card_img_box">
-																<img className='posts_card_img' src={value.image} alt={value.name} />
-															</div>
-															<div className="posts_card_name">{value.name}</div>
-															<div className="posts_card_time">{value.time}</div>
-															<div className="posts_card_line"></div>
-															<div className="posts_card_description">{value.company}</div>
-														</div>
-													</div>
-												</div>
-											)
-										})
-									}
+								<div className="introduce_content_side_bar_item">
+									<div className="introduce_content_side_bar_item_img_box">
+										<img src={imageGT5.default.src} alt="gioi-thieu" className='introduce_content_side_bar_item_img' />
+									</div>
+									<div className="introduce_content_side_bar_item_title">New Features</div>
+									<div className="introduce_content_side_bar_item_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</div>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

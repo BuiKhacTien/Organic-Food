@@ -35,9 +35,9 @@ function index() {
               <div className="contact_infomation_row">
                 <div className="contact_infomation_row_icon"><ImLocation2 /></div>
                 <div className="contact_infomation_row_text">
-                  <div className=""><b>Trụ sở:</b> 1004/6A, Tỉnh Lộ 43, KP1, P.Bình Chiểu, Q.Thủ Đức, TP.Hồ Chí Minh.</div>
-                  <div className=""><b>Xưởng SX:</b> 11A đường Phú Mỹ, Phú Hòa Đông, Củ Chi, TP.Hồ Chí Minh.</div>
-                  <div className=""><b>VPDD:</b> QL1A phường Hoài Thanh Tây, Thị Xã Hoài Nhơn, Tỉnh Bình Định.</div>
+                  <div><b>Trụ sở:</b> 1004/6A, Tỉnh Lộ 43, KP1, P.Bình Chiểu, Q.Thủ Đức, TP.Hồ Chí Minh.</div>
+                  <div style={{ marginTop: 10 }}><b>Xưởng SX:</b> 11A đường Phú Mỹ, Phú Hòa Đông, Củ Chi, TP.Hồ Chí Minh.</div>
+                  <div style={{ marginTop: 10 }}><b>VPDD:</b> QL1A phường Hoài Thanh Tây, Thị Xã Hoài Nhơn, Tỉnh Bình Định.</div>
                 </div>
               </div>
               <div className="contact_infomation_row">

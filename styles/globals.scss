@@ -189,9 +189,8 @@ $color-black : #000;
 .footer_infomation_row {
   display: flex;
   color: rgb(169, 169, 169);
-  font-weight: 600;
   padding: 15px 0;
-
+  line-height: 25px;
   a:hover {
     color: rgb(123, 169, 61);
   }
@@ -439,6 +438,9 @@ $color-black : #000;
 .sibar_menu_box_item:hover {
   background-color: rgb(170, 170, 170, 0.3);
 
+}
+.sibar_menu_box_item_active {
+  background-color: rgb(170, 170, 170, 0.4);
 }
 
 .input_search_box {
@@ -1637,7 +1639,7 @@ $color-black : #000;
 .contact_infomation_row_text {
   padding-left: 10px;
   padding-top: 3px;
-  line-height: 30px;
+  line-height: 25px;
 }
 .contact_title {
   font-size: 2rem;
@@ -1881,13 +1883,12 @@ $color-black : #000;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 1280px;
+  width: 800px;
   // background-color: rgb(244, 244, 244);
   font-size: 14px;
 }
 .introduce_container_opacity {
   // background-color: rgb(139, 139, 139, 0.8);
-  padding: 80px 0;
 }
 .introduce_title_box {
   padding: 30px;
@@ -1975,30 +1976,28 @@ $color-black : #000;
   width: 100%;
   margin: 30px 0;
 }
-.introduce_content_building {
-  padding: 10px;
+.introduce_content_side_bar {
+  padding: 0 30px;
 }
-.introduce_content_building_title {
-  font-size: 1.5em;
+.introduce_content_side_bar_item {
+  margin: 80px 0;
+}
+.introduce_content_side_bar_item_img_box {
+  display: flex;
+  justify-content: center;
+}
+.introduce_content_side_bar_item_img {
+  width: 100px;
+}
+.introduce_content_side_bar_item_title {
   font-weight: 700;
+  font-size: 1.5rem;
   text-align: center;
-  padding: 20px;
-  color: #fff;
+  padding: 10px 0;
 }
-.introduce_content_building_item_product {
-  background-color: rgb(255, 255, 255, 0.3);
-  border-radius: 10px;
-  margin: 20px 0;
-  transition: all ease-in-out 300ms;
-}
-.introduce_content_building_item_product:hover {
-  transform: scale(1.05);
-}
-
-.introduce_content_building_item_posts {
-  background-color: rgb(255, 255, 255, 0.3);
-  border-radius: 10px;
-  margin: 20px 0;
+.introduce_content_side_bar_item_description {
+  font-size: 1.2rem;
+  text-align: center;
 }
 //E//
 //S//

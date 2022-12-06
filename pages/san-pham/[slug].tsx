@@ -35,7 +35,7 @@ export default function Slug({ }) {
 				<div className="breadcrumb_box_router_box">
 					<div className="breadcrumb_box_router_prev" onClick={() => router.push("/")}>Trang chủ</div>
 					<div className="breadcrumb_box_router_slash">/</div>
-					<div className="breadcrumb_box_router_here" onClick={() => router.push("/cong-trinh")}>Sản phẩm</div>
+					<div className="breadcrumb_box_router_here_hover" onClick={() => router.push("/san-pham")}>Sản phẩm</div>
 				</div>
 			</div>
             <div className='detail_container'>

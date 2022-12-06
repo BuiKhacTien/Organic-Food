@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 import Drawer from "../common/Drawer"
 import SidebarMenu from "./SidebarMenu"
@@ -55,60 +56,30 @@ const menuData = [
 ]
 
 function index() {
+	const [menu, setMenu] = useState(menuData)
 
-	//HeaderPC
-	const [menu, setMenu] = useState(
-		[
-			{
-				id: 0,
-				name: 'Trang chủ',
-				isSelected: true,
-				to: '/',
-			},
-			{
-				id: 1,
-				name: 'Giới thiệu',
-				isSelected: false,
-				to: '/gioi-thieu',
-			},
-			{
-				id: 2,
-				name: 'Sản phẩm',
-				isSelected: false,
-				to: '/san-pham',
-			},
-			{
-				id: 3,
-				name: 'Công trình',
-				isSelected: false,
-				to: '/cong-trinh',
-			},
-			{
-				id: 4,
-				name: 'Tin tức',
-				isSelected: false,
-				to: '/tin-tuc',
-			},
-			{
-				id: 5,
-				name: 'Liên hệ',
-				isSelected: false,
-				to: '/lien-he',
-			},
-		]
-	)
-	const handleClickMenu = (id: Number) => {
-		const newMenu = menuData.map((value) => {
-			if (value.id === id) {
-				return {
-					...value,
-					isSelected: !value.isSelected
+	const router = useRouter()
+
+	
+	useEffect(() => {
+		const asPath = router.asPath
+		const arrPath = asPath.split("/")
+		if (arrPath) {
+			const menuDataNew = menuData.map((value) => {
+				if(arrPath[1] === value.to.replace("/","")) {
+					return {
+						...value,
+						isSelected: true,
+					}
 				}
-			}
-			return value
-		})
-		setMenu(newMenu)
-	}
+				return value
+			})
+			setMenu(menuDataNew)
+		}
+	}, [router])
+	//HeaderPC
+
+
 
 	//HeaderMobile
 
@@ -156,7 +127,6 @@ function index() {
 							menu.map((value) => (
 								<Link href={value.to} key={value.name}>
 									<div
-										onClick={() => handleClickMenu(value.id)}
 										className={value.isSelected ? 'header_menu_desktop_item header_menu_desktop_active' : 'header_menu_desktop_item'}
 									>
 										{value.name}

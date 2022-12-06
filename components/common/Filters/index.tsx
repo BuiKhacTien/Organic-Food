@@ -8,11 +8,11 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 
 function Index({openFilters, setOpenFilters}: any) {
 
-    const [value, setValue] = useState<number[]>([0, 10000]);
+    // const [value, setValue] = useState<number[]>([0, 10000]);
 
-    const handleChange = (event: Event, newValue: number | number[]) => {
-        setValue(newValue as number[]);
-    };
+    // const handleChange = (event: Event, newValue: number | number[]) => {
+    //     setValue(newValue as number[]);
+    // };
 
     const handleClickCloseFilters = () => {
         setOpenFilters(!openFilters)
@@ -40,7 +40,7 @@ function Index({openFilters, setOpenFilters}: any) {
                     </Accordion.Item>
                 </Accordion>
             </div>
-            <div className="products_page_filters_box_range">
+            {/* <div className="products_page_filters_box_range">
                 <div className="products_page_filters_box_range_title">LỌC THEO GIÁ</div>
                 <Box sx={{ width: "100%", padding: 4 }}>
                     <Slider
@@ -51,7 +51,7 @@ function Index({openFilters, setOpenFilters}: any) {
                 <div className="products_page_filters_box_range_submit">
                     ÁP DỤNG
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

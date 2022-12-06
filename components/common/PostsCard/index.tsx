@@ -17,6 +17,7 @@ function Index({data}: Props) {
 
   return (
     <div className='posts_card_box'>
+      <Link href="/cong-trinh/he-thong-xu-ly-nuoc-thai-thuy-san">
       <div className="posts_card_box_content">
         <div className="posts_card_img_box">
           <img className='posts_card_img' src={data.image} alt={data.name} />
@@ -26,6 +27,7 @@ function Index({data}: Props) {
         <div className="posts_card_line"></div>
         <div className="posts_card_description">{data.company}</div>
       </div>
+      </Link>
     </div>
   )
 }

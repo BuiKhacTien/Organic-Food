@@ -21,9 +21,9 @@ function index() {
               <div className="footer_infomation_row">
                 <div className="footer_infomation_row_icon"><ImLocation2 size={18} color="white"/></div>
                 <div className="footer_infomation_row_text">
-                  <div className="">Trụ sở: 1004/6A, Tỉnh Lộ 43, KP1, P.Bình Chiểu, Q.Thủ Đức, TP.Hồ Chí Minh.</div>  
-                  <div className="">Xưởng SX: 11A đường Phú Mỹ, Phú Hòa Đông, Củ Chi, TP.Hồ Chí Minh.</div>  
-                  <div className="">VPDD: QL1A phường Hoài Thanh Tây, Thị Xã Hoài Nhơn, Tỉnh Bình Định.</div>  
+                  <div><b>Trụ sở:</b> 1004/6A, Tỉnh Lộ 43, KP1, P.Bình Chiểu, Q.Thủ Đức, TP.Hồ Chí Minh.</div>  
+                  <div style={{ marginTop: 5 }}><b>Xưởng SX:</b> 11A đường Phú Mỹ, Phú Hòa Đông, Củ Chi, TP.Hồ Chí Minh.</div>  
+                  <div style={{ marginTop: 5 }}><b>VPDD:</b> QL1A phường Hoài Thanh Tây, Thị Xã Hoài Nhơn, Tỉnh Bình Định.</div>  
                 </div>
               </div>
               <div className="footer_infomation_row">
@@ -36,7 +36,7 @@ function index() {
               </div>
               <div className="footer_infomation_row">
                 <div className="footer_infomation_row_icon"><TbReceiptTax size={18} color="white"/></div>
-                <div className="footer_infomation_row_text">MST: 0312396815</div>
+                <div className="footer_infomation_row_text"><b>MST:</b> 0312396815</div>
                 {/* <a className="footer_infomation_row_text" href="mailto:email@gmail.com">email@gmail.com</a> */}
               </div>
               {/* <div className="footer_infomation_row">
@@ -60,9 +60,9 @@ function index() {
               <Link href="/gioi-thieu">
                 <div className="footer_category_text">Giới thiệu</div>
               </Link>
-              <Link href="/san-pham">
+              {/* <Link href="/san-pham">
                 <div className="footer_category_text">Sản phẩm</div>
-              </Link>
+              </Link> */}
               <Link href="/cong-trinh">
                 <div className="footer_category_text">Công trình</div>
               </Link>
